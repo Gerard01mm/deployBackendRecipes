@@ -15,7 +15,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")#'django-insecure-$p9@j@+pi_@f!19nv4lv(
 DEBUG = True
 
 # List of allowed hostnames or IP addresses for this project
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS")#[]
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")#[]
 
 # Application definition
 INSTALLED_APPS = [
